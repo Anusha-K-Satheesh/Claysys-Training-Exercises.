@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h2>What Can JavaScript Do?</h2>
+    <p id="demo">JavaScript can change HTML content.</p>
+    <button type="button" onclick="display()">Click Me</button>
+    <hr>
+    <img src="./bulb_off.png" height="150px" width="100px" id="picoff">
+    <button type="button" onclick="On()">Turn On</button>
+    <button type="button" onclick="Off()">Turn Off</button>
+    <hr>
+    <p id="demo1">JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="change()">Change</button>
+    <hr>
+    <p id="demo2">JavaScript can show hidden HTML elements.</p>
+    <button type="button" onclick="changeDisplay()">Change Display</button>
+    <hr>
+    <h1>My First Web Page</h1>
+    <p>My First Paragraph</p>
+    <p id="demo3"></p>
+    <hr>
+    <h2>The window.print() Method</h2>
+    <p>Click the button to print the current page.</p>
+    <button type="button"  onclick="printPage()">Print</button>
+    <h2>JavaScript Variables</h2>
+    <p>var variable in JavaScript</p>
+    <p id="demo4"></p><hr>
+    <p>let variable in JavaScript</p>
+    <p id="demo5"></p><hr>
+    <p>const variable in JavaScript</p>
+    <p id="demo6"></p><hr>
+    <p>let and const variable in JavaScript</p>
+    <p id="demo7"></p><hr>
+    <p>variable in JavaScript</p>
+    <p id="demo8"></p><hr>
+    <h2>Constant Array in JavaScript</h2>
+    <p id="demo9"></p><hr>
+    <p id="demo10"></p>
+
+    
+    
+
+
+    <script>
+        function display() {
+            document.getElementById("demo").innerHTML = "Hello World!"
+        }
+        function On() {
+            document.getElementById("picoff").src = "bulb_on.jfif"
+        }
+        function Off() {
+            document.getElementById("picoff").src = "bulb_off.png"
+        }
+        function change() {
+            document.getElementById("demo1").style.fontSize = "32px"
+        }
+        function changeDisplay() {
+            document.getElementById("demo2").style.display = "inline"
+        }
+        document.getElementById("demo3").innerHTML = 5 + 6
+        document.write("<h1>My First Web Page using document.write()</h1><hr>")
+        alert("Are you happy!<hr>")
+        console.log(5+6)
+        function printPage() {
+            window.print()
+        }
+        var x = 5
+        var y = 6
+        var z = x+y
+        document.getElementById("demo4").innerHTML = "The value of z is : "+z
+        
+        let q = 4;
+        let w = 2;
+        let e = q + w;
+        document.getElementById("demo5").innerHTML = "The value of e is : "+e
+        
+        const i = 5;
+        const j = 4;
+        const k = i + j;
+        document.getElementById("demo6").innerHTML = "The value of k is : "+k
+
+        const price1 = 5;
+        const price2 = 6;
+        let total = price1 + price2;
+        document.getElementById("demo7").innerHTML = "The value of total is : "+total
+
+        let d = "5" + 8 + 1 
+        let v = 5 + 8 + 1
+        document.getElementById("demo8").innerHTML = "The value of d = "+ d + ":::The value of v =" + v
+
+        const colors = ["Red" , "Blue" , "Yellow"]
+        document.getElementById("demo9").innerHTML = colors
+        colors[1] = "Green"
+        document.getElementById("demo9").innerHTML = colors
+        colors.push("Blue")
+        document.getElementById("demo9").innerHTML = colors
+
+        var a = "Anusha K"
+        var b = "Satheesh"
+        var result = a + " " + b 
+        document.write(result+"<hr>")
+
+        var s = 10
+        s--
+        document.write("Value of s = "+s+"<hr>")
+
+        var c = 10
+        c++
+        document.write("Value of s = "+c+"<hr>")
+
+        let m = 10
+        let n = m**3
+        document.write(n+"<hr>")
+    </script>
+</body>
+</html>

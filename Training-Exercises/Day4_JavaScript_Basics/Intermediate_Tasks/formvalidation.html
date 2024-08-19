@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link href="./formvalidation.css" type="text/css" rel="stylesheet">
+    <script src="./formvalidation.js"></script>
+</head>
+<body>
+    <div class="mainContent">
+        <div class="bodyContent">
+            <div class="head">
+                <h1 id="register">REGISTER</h1>
+            </div>
+            <div class="body">
+                <form onsubmit="return validate()">
+                    <label>Full Name</label>
+                    <input type="text" name="fullname" class="box">
+                    <label>E-mail</label>
+                    <input type="text" name="mail" id="mail">
+                    <span id="error">Please enter a valid email address.</span>
+                    <label>Password</label>
+                    <input type="password" name="pwd" class="box">
+                    <button type="submit" id="btn">Submit</button>
+                </form>
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

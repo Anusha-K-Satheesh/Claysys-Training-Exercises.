@@ -1,0 +1,20 @@
+.body-container {
+    background-color: rgb(169, 238, 169);
+}
+#head {
+    text-align: center;
+    font-weight: bolder;
+    color: #013220;
+}
+.subhead {
+    font-weight: bolder;
+    color: #660033;
+}
+#btn {
+    display: block;
+    margin: auto;
+    background-color: #001C00;
+    color: white;
+    width: 200px;
+    height: 50px;
+}

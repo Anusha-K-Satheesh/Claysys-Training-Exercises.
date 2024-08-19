@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius to Fahrenheit</title>
+    <link href="./temperature.css" type="text/css" rel="stylesheet">
+    <script src="./temperature.js"></script>
+</head>
+<body class="content">
+    <h1 id="head">Converting Functions From Celsius to Fahrenheit.</h1>
+    <form onsubmit="return toFahrenheit(event)">
+        <label class="field">Celsius :</label>
+        <input type="number" name="cel" id="boxes">
+        <label class="field">Fahrenheit :</label>
+        <input type="number" name="fah" id="box" readonly>
+        <button type="submit" id="btn">Submit</button>
+    </form>
+</body>
+</html>

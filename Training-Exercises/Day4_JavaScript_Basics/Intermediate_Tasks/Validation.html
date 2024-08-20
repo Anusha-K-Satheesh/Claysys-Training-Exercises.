@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Application Form</title>
+    <link href="./Validation.css" type="text/css" rel="stylesheet">
+    <script src="./Validation.js"></script>
+</head>
+<body>
+    <!-----Main Portion----->
+    <div class="main">
+        <div class="header">
+            <div class="header-left">
+                <h2 id="form1">Farm Volunteer Worker</h2><h2 id="form2">Application Form</h2>
+            </div>
+            <div class="header-right">
+                <img src="./Farm-logo.jpg" id="logo">
+                <div class="header-text">
+                    <h5 id="green">
+                        <span class="line">Green Thumb</span>
+                        <span class="line">Volunteers</span>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <!-----Body Portion----->
+        <div class="body">
+            <div class="top">
+                <div class="top-left">
+                    <form>
+                        <label>Application Date</label>
+                        <input type="date" name="date" class="content" onfocusout="validateDate()"> 
+                        <p class="subscript">Date</p>
+                        <P id="date-error" class="error-message">Required field</P>
+
+                        <label>Name</label>
+                        <input type="text" name="fname" class="content" onfocusout="validateName()"> 
+                        <p class="subscript">First Name</p>
+                        <p id="fname-error" class="error-message">Required field</p>
+
+                        <label>Age</label>
+                        <input type="text" name="age" class="content" onfocusout="validateAge()"> 
+                        <p class="subscript">If you're below 18 years old, you need a<br>parental consent form.</p>
+                        <p id="age-error" class="error-message">Required field or Invalid Age</p>
+
+                        <label>Emergency Contact Person</label>
+                        <input type="text" name="person" class="content" onfocusout="validatePerson()"> 
+                        <p class="subscript">First Name</p>
+                        <p id="person-error" class="error-message">Required field</p>
+                    </form>
+                </div>
+                <div class="top-right">
+                    <form>
+                        <label>Position applying for</label> 
+                        <input type="text" name="position" class="content" onfocusout="validatePosition()"> 
+                        <p id="position-error" class="error-message">Required field</p>
+
+                        <input type="text" name="lname" id="boxspace" onfocusout="validateLastName()"> 
+                        <p class="subscript">Last Name</p>
+                        <p id="lname-error" class="error-message">Required field</p>
+
+                        <label id="select">Gender</label>
+                        <input type="radio" name="gender" value="male" id="male" onfocusout="validateGender()">
+                        <label for="male" class="gender">Male</label>
+                        <input type="radio" name="gender" value="female" id="female" onfocusout="validateGender()">
+                        <label for="female" class="gender">Female</label>
+                        <p id="gender-error" class="error-message">Required field</p>
+
+                        <input type="text" name="lname" id="boxspaces" onfocusout="validateLastName()"> 
+                        <p class="subscript">Last Name</p>
+                        <p id="lname-error2" class="error-message">Required field</p>
+                    </form>
+                </div>
+            </div>
+            <!-----Middle Portion----->
+            <div class="middle">
+                <label>Do we have your permission to take photographs of you for advertising and marketing purposes?</label>
+                <div class="radio-group">
+                    <input type="radio" value="yes" id="yes-photo" onfocusout="validatePhotoPermission()">
+                    <label for="yes-photo" class="gender">Yes</label>
+                    <input type="radio" value="no" id="no-photo" onfocusout="validatePhotoPermission()">
+                    <label for="no-photo" class="gender">No</label>
+                </div>
+                <p id="photo-error" class="error-message">Required field</p>
+                <p id="day">Date : January 1st, 2028</p>
+            </div>
+            <!-----Bottom Portion----->
+            <div class="bottom">
+                <div class="bottom-left">
+                    <label>Do you have an updated immunization?</label>
+                    <div class="radio-group">
+                        <input type="radio" value="yes" id="yes-immunization" onfocusout="validateImmunization()">
+                        <label for="yes-immunization" class="gender">Yes</label>
+                        <input type="radio" value="no" id="no-immunization" onfocusout="validateImmunization()">
+                        <label for="no-immunization" class="gender">No</label>
+                    </div>
+                    <p id="immunization-error" class="error-message">Required field</p>
+
+                    <input type="checkbox" class="declaration" name="declaration" value="correct" onfocusout="validateDeclaration()">
+                    <label for="declaration" class="declaration">I hereby certify that my answers and statements in this application are true and correct.</label>
+                    <p id="declaration-error" class="error-message">Required field</p>
+                </div>
+                <div class="bottom-right">
+                    <p id="sig">Signature</p>
+                    <img src="./Farm-sign.jpg" id="sign-logo" alt="Signature">
+                    <hr id="line1">
+                    <hr id="line2">
+                    <p id="scarlet-victor">Scarlet Victor</p>
+                    <p id="volunteer">Volunteers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+        

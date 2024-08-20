@@ -1,0 +1,206 @@
+/*-----Main Portion-----*/
+.main {
+    background-image: url("./Farm-bg.png");
+    height: 850px;
+    width: 760px;
+    margin-left: 350px;
+    padding: 0px 20px 20px 20px;
+}
+
+/*-----Header Portion-----*/
+.header {
+    background-color: #00573F;
+    color: white;
+    font-weight: bolder;
+    margin: 0px 20px 0px 20px;
+    width: 720px;
+    height: 120px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header-left {
+    padding: 15px 0px 5px 20px;
+    float: left;
+}
+.header-text {
+    padding: 40px 20px 5px 0px;
+    float: right;
+}
+#logo {
+    margin: 65px 0px 0px 285px;
+}
+.line {
+    display: block;
+}
+#form1 {
+   margin-bottom: 0;
+}
+#form2 {
+    display: block;
+    margin-top: 0;
+}
+
+/*-----Body Portion-----*/
+.body {
+    background-color: white;
+    margin: 0px 20px 20px 20px;
+    width: 720px;
+    height: 710px;
+    font-weight: bolder;
+    padding-top: 0;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    height: 440px;
+    width: 720px;
+}
+.top-left {
+    width: 50%;
+    padding: 15px 0px 0px 20px;
+    float: left;
+}
+.content {
+    border-radius: 5px;
+    border-style: groove;
+    margin-top: 5px; /* Reduced margin to minimize the gap */
+    height: 25px;
+    width: 300px;
+    opacity: 0.5;
+    background-color: rgb(226, 222, 222);
+    border: none;
+}
+.subscript {
+    opacity: 0.9;
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 2px; /* Reduced margin to minimize the gap */
+}
+
+.top-right {
+    width: 50%;
+    padding: 15px 20px 0px 20px;
+    float: right;
+    
+}
+#boxspace {
+    border-radius: 5px;
+    border-style: groove;
+    margin-top: 56px;
+    height: 25px;
+    width: 300px;
+    opacity: 0.5;
+    background-color: rgb(226, 222, 222);
+    border: none;
+}
+.gender {
+    font-weight: normal;
+    padding-right: 15px;
+    margin-top: 36px;
+}
+#select {
+    font-weight: bolder;
+    padding-right: 15px;
+    margin-top: 36px;
+}
+#male {
+    padding-top: 36px;
+    height: 20px;
+    width: 20px;
+}
+#female {
+    margin-top: 36px;
+    height: 20px;
+    width: 20px;
+}
+#boxspaces {
+    border-radius: 5px;
+    border-style: groove;
+    margin-top: 61px;
+    height: 25px;
+    width: 300px;
+    opacity: 0.5;
+    background-color: rgb(226, 222, 222);
+    border: none;
+}
+/*-----Middle Portion-----*/
+.middle {
+    height: 75px;
+    width: 700px;
+    padding: 20px 20px 0 20px;
+}
+#day {
+    font-weight: normal;
+    margin: 0px 0px 0px 410px;
+}
+#yes, #no {
+    height: 20px;
+    width: 20px;
+}
+
+/*-----Bottom Portion-----*/
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    height: 231px;
+    width: 720px;
+}
+.bottom-left {
+    width: 60%;
+    padding: 20px 20px 0 20px;
+}
+.declaration {
+    margin-top: 55px;
+    height: 20px;
+    width: 20px;
+    font-weight: normal;
+}
+.bottom-right {
+    width: 50%;
+    padding: 15px 20px 0 20px;
+}
+#sig {
+    margin: 2px 0px 0px 20px;
+}
+#sign-logo {
+    margin: 0px 60px 0px 150px;
+    padding-top: 0;
+    align-content: center;
+}
+#line1 {
+    border-style: dotted;
+    margin: 0px 60px 0px 105px;
+    align-content: center;
+}
+#line2 {
+    border-style: solid;
+    margin: 10px 0px 0px 20px;
+}
+#scarlet-victor {
+    margin: 0px 0px 0px 20px;
+}
+#volunteer {
+    margin: 0px 0px 0px 20px;
+    font-weight: normal;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 2px;
+    display: none;
+}
+.content.error {
+    border: 2px solid red;
+    margin-top: 0;
+}
+.content.success {
+    border: 2px solid green;
+    margin-top: 0;
+}
+.content.error {
+    border: 2px solid red;
+}
+
+.content.success {
+    border: 2px solid green;
+}

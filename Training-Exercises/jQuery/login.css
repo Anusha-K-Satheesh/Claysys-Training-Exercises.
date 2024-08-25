@@ -1,0 +1,86 @@
+.bodycontent {
+    background-image: url("./login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    background: linear-gradient(lightblue , violet);
+    height: 580px;
+    width: 420px;
+    margin-left: 530px;
+}
+.head {
+    height: 135px;
+    width: 500px;
+}
+#title {
+    padding: 30px 0px 0px 100px;
+}
+#subtitle {
+    padding-left: 120px;
+    padding-top: -10px;
+}
+.labelfield {
+    display: block;
+    padding: 20px 0px 0px 50px;
+}
+.field {
+    margin: 10px 0px 0px 50px;
+    width: 300px;
+    height: 30px;
+}
+.conclusioncontent {
+    height: 72px;
+}
+.remember-me {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 0px 50px;
+}
+.clabelfield {
+    padding-left: 10px;
+}
+.cfield {
+    transform: scale(1.5); /* Increase the scale factor as needed */
+}
+.linkcontent {
+    margin: 15px 0px 0px 50px;
+}
+.login {
+    height: 70px;
+}
+#btn {
+    margin: 30px 0px 0px 145px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+    border-color: royalblue;
+}
+.signup {
+    height: 55px;
+    align-content: center;
+}
+#text {
+    margin-left: 50px;
+    display: inline;
+}
+/* formvalidation1.css */
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    display: none;
+    margin-top: 5px;
+    padding-left: 45px;
+}
+
+.field.error {
+    border-color: red;
+}
+
+.field.valid {
+    border-color: green;
+} 

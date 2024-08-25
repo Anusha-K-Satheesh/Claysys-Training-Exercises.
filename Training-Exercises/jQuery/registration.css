@@ -1,0 +1,109 @@
+.bodystyle {
+    background-image: url("./register.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainoutline {
+    background: linear-gradient(pink, lightgreen);
+    height: 1130px;
+    width: 550px;
+    margin-left: 530px;
+}
+.head {
+    height: 135px;
+    width: 550px;
+}
+#title {
+    padding-top: 30px;
+    text-align: center;
+}
+#subtitle {
+    margin-top: -10px;
+    text-align: center;
+}
+.personalinfo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.personalgroup {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjusts the space between label and input */
+}
+
+.fieldlabel {
+    width: 150px;
+    font-weight: bold; /* Adjust the width of the label */
+}
+
+.field {
+    border-radius: 10px;
+    border-color: lightcoral;
+    height: 30px;
+    width: 350px;
+    display: block;
+}
+
+.radiobtn {
+    transform: scale(1.8);
+    margin-right: 15px;
+}
+.contactinfo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.contactgroup {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjusts the space between label and input */
+}
+.accountinfo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.accountgroup {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjusts the space between label and input */
+}
+.buttons {
+    padding: 20px;
+}
+#btnback {
+    background-color: red;
+    border-radius: 10px;
+    border-color: red;
+    color: white;
+    margin: 20px 0px 0px 100px;
+    height: 35px;
+    width: 70px;
+}
+#btnsignup {
+    background-color: royalblue;
+    border-radius: 10px;
+    border-color: royalblue;
+    color: white;
+    margin-left: 180px;
+    height: 35px;
+    width: 85px;
+}
+.footer {
+    padding: 15px 0px 0px 20px;
+    font-weight: bold;
+}
+#linktext {
+    display: inline;
+}
+.error-msg {
+    color: red;
+    font-size: 12px;
+    margin: 5px 0 0 10px; /* Adjust the margin to position the error message */
+    display: none;
+}

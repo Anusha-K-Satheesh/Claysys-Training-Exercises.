@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Form Validation</title>
+    <link href="./login.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./login.js" defer></script>
+</head>
+<body class="bodycontent">
+    <div class="main">
+        <div class="head">
+            <h1 id="title">Welcome Back!</h1>
+            <h3 id="subtitle">Login to Your Account</h3>
+        </div>
+        <div class="mailcontent">
+            <label class="labelfield">E-mail Address :</label>
+            <input type="text" id="email" name="mail" placeholder="Enter your email" class="field">
+            <div id="emailError" class="error-message"></div>
+        </div>
+        <div class="passwordcontent">
+            <label class="labelfield">Password :</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" class="field">
+            <div id="passwordError" class="error-message"></div>
+        </div>
+        <div class="conclusioncontent">
+            <div class="remember-me">
+                <input type="checkbox" name="remember" class="cfield">
+                <label class="clabelfield">Remember Me</label>
+            </div>
+            <div class="linkcontent">
+                <a href="./formvalidation1.html">Forgot Password ?</a>
+            </div>
+        </div>
+        <div class="login">
+            <button type="submit" id="btn">Login</button>
+        </div>
+        <div class="signup">
+            <p id="text">Don't have an account ?</p>
+            <a href="./registration.html">Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>
